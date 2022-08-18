@@ -1,0 +1,30 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<div id="app">
+<form>
+<h3>Temperature converter: </h3>
+<input type="text" id="number">
+
+<input type="button" onclick="celsius()" value="Celsius"> <input type="button" onclick="fahrenheit()" value="Farenheit">
+<div id="result"></div>
+</form>
+</div>
+<div =="" id="number"></div>
+<div class="">
+<script>
+
+function celsius(){
+let temp = document.getElementById('number').value;
+document.getElementById('result').innerHTML = `${(temp - 32) / 1.8000} °C`;
+}
+
+function fahrenheit(){
+let temp = document.getElementById('number').value;
+document.getElementById('result').innerHTML = `${(temp * 1.8000) + 32} °F`;
+}
+</script>
+</body>
+</html>
